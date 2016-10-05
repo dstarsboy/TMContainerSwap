@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TMContainerSwap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kz-Np-Yoj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="XS9-bW-bsd"/>
+                                    <constraint firstAttribute="height" constant="512" id="gY8-SZ-EXQ"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="TSQ-BD-TZt" kind="embed" id="fxe-fk-dDP"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-c9-hbn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cpq-91-7Pr"/>
+                                    <constraint firstAttribute="width" constant="153" id="Kma-XT-NaR"/>
+                                </constraints>
+                                <state key="normal" title="View Controller 1"/>
+                                <connections>
+                                    <action selector="btnView1Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnW-mT-mga"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjQ-g8-hHM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CFS-ia-Lx1"/>
+                                    <constraint firstAttribute="width" constant="153" id="yO9-1N-ME6"/>
+                                </constraints>
+                                <state key="normal" title="View Controller 2"/>
+                                <connections>
+                                    <action selector="btnView2Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDb-UM-P2L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Kz-Np-Yoj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GXk-wv-ADb"/>
+                            <constraint firstAttribute="trailing" secondItem="gjQ-g8-hHM" secondAttribute="trailing" constant="16" id="PfI-Rm-q7i"/>
+                            <constraint firstItem="gjQ-g8-hHM" firstAttribute="top" secondItem="4Kz-Np-Yoj" secondAttribute="bottom" constant="19" id="QZy-hy-hKb"/>
+                            <constraint firstItem="TMQ-c9-hbn" firstAttribute="top" secondItem="4Kz-Np-Yoj" secondAttribute="bottom" constant="19" id="oz0-ej-KVY"/>
+                            <constraint firstItem="TMQ-c9-hbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="uhA-FP-thL"/>
+                            <constraint firstItem="4Kz-Np-Yoj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="zHj-Zc-HmV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="4Kz-Np-Yoj" id="BSY-f4-WFp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610.39999999999998" y="196.55172413793105"/>
+        </scene>
+        <!--View1 View Controller-->
+        <scene sceneID="zJU-YM-GZi">
+            <objects>
+                <viewController id="TSQ-BD-TZt" customClass="View1ViewController" customModule="TMContainerSwap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Edr-Yj-QWA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qeb-Pm-4YA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JSc-23-JAl">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="512"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="343" height="512"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofW-5n-DRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="197"/>
+        </scene>
+        <!--View2 View Controller-->
+        <scene sceneID="UGB-m4-fwI">
+            <objects>
+                <viewController storyboardIdentifier="View2" id="6Vs-au-9S6" customClass="View2ViewController" customModule="TMContainerSwap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PjK-pv-emQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kqj-1Q-8AP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gwM-R0-Lt1">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="512"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="342" height="512"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Faw-Uo-tWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="196"/>
+        </scene>
+    </scenes>
+</document>
